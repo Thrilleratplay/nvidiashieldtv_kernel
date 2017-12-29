@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch="../../" review="git-master.nvidia.com/r"/>
+
+  <default revision="rel-24-uda-r1.2-partner" platform="linux" depth="1" remote="origin"/>
+
+  <project path="build" name="android/platform/build" groups="pdk,tradefed">
+    <copyfile src="core/root.mk" dest="Makefile"/>
+  </project>
+  <project path="bionic" name="android/platform/bionic" groups="pdk"/>
+  <project path="bootable/recovery" name="android/platform/bootable/recovery" groups="pdk"/>
+  <project path="device/common" name="android/device/common" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="device/generic/armv7-a-neon" name="android/device/generic/armv7-a-neon" groups="pdk"/>
+  <project path="device/generic/common" name="android/device/generic/common" groups="pdk"/>
+  <project path="device/generic/goldfish" name="android/device/generic/goldfish" groups="pdk"/>
+  <project path="device/generic/mini-emulator-arm64" name="android/device/generic/mini-emulator-arm64" groups="pdk"/>
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="android/device/generic/mini-emulator-armv7-a-neon" groups="pdk"/>
+  <project path="device/google/atv" name="android/device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs"/>
+  <project path="device/nvidia" name="tegra/prebuilts-device-nvidia"/>
+  <project path="external/bison" name="android/platform/external/bison" groups="pdk" revision="rel-24-uda-r2"/>
+  <project path="external/compiler-rt" name="android/platform/external/compiler-rt" groups="pdk"/>
+  <project path="external/jemalloc" name="android/platform/external/jemalloc" groups="pdk"/>
+  <project path="external/libcxx" name="android/platform/external/libcxx" groups="pdk"/>
+  <project path="external/libcxxabi" name="android/platform/external/libcxxabi" groups="pdk"/>
+  <project path="external/libpng" name="android/platform/external/libpng" groups="pdk"/>
+  <project path="external/libselinux" name="android/platform/external/libselinux" groups="pdk"/>
+  <project path="external/pcre" name="android/platform/external/pcre" groups="pdk"/>
+  <project path="external/regex-re2" name="android/platform/external/regex-re2" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="external/selinux" name="android/platform/external/selinux" groups="pdk" revision="rel-24-uda-r2"/>
+  <project path="external/wpa_supplicant_8" name="android/platform/external/wpa_supplicant_8" groups="pdk"/>
+  <project path="external/zlib" name="android/platform/external/zlib" groups="pdk"/>
+  <project path="frameworks/native" name="android/platform/frameworks/native" groups="pdk"/>
+  <project path="kernel" name="linux-3.10" revision="rel-24-uda-r1.2"/>
+  <project path="libnativehelper" name="android/platform/libnativehelper" groups="pdk"/>
+  <project path="prebuilts/clang/linux-x86/host/3.6" name="android/platform/prebuilts/clang/linux-x86/host/3.6" groups="pdk,linux"/>
+  <project path="prebuilts/clang/host/linux-x86" name="android/platform/prebuilts/clang/host/linux-x86" groups="pdk"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" revision="rel-24-uda-r2"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" revision="rel-24-uda-r2"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/>
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" revision="rel-24-uda-r2"/>
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="android/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" revision="rel-24-uda-r2"/>
+  <project path="prebuilts/misc" name="android/platform/prebuilts/misc" groups="pdk" revision="rel-24-uda-r2"/>
+  <project path="system/core" name="android/platform/system/core" groups="pdk"/>
+  <project path="system/extras" name="android/platform/system/extras" groups="pdk"/>
+
+  <project path="vendor/nvidia/build" name="android/platform/vendor/nvidia/build" revision="rel-24-uda-r1.2"/>
+  <project path="vendor/nvidia/licensed-binaries" name="tegra/prebuilts-licensed-binary-tlk-t210"/>
+</manifest>
